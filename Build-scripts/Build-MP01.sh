@@ -32,10 +32,10 @@ DIRVER="RC3c-Ath5k"
 echo "Copy files directory from Git repo into build folder"
 rm -rf ./SECN-build/
 cp -rp ~/Git/vt-firmware-mp01/SECN-build/  .
-cp -rp ./SECN-build/MP-01/files  .
+cp -rp ./SECN-build/files  .
 
-echo "Copy ath5k overlay files from Git repo into build folder"
-cp -rp ~/Git/vt-firmware-mp01/SECN-build/MP-01/ath5k/files  .
+#echo "Copy wifi driver overlay files from Git repo into build folder, if reqd"
+#cp -rp ~/Git/vt-firmware-mp01/SECN-build/MP-01/ath5k/files  .
 
 echo "Copy driver code from Git repo into build folder"
 rm -rf ./drivers
