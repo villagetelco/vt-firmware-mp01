@@ -32,6 +32,8 @@ reload() {
 start() {
 
 	# Check to see if Asterisk is already running
+  # Allow startup time
+  sleep 10
 	if [ -f $DEST/var/run/asterisk.pid ]; then
 		exit
 	fi
