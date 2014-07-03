@@ -28,7 +28,7 @@ exten => _XXX,1,Dial(SIP/4000@$OCTET123.$EXT)
 ; This section is for the echo test 
 ; Local echo
 exten => _3246,1,Answer()
-exten => _3246,n,Playback(success)
+exten => _3246,n,Playback(echo-test)
 exten => _3246,n,Echo() 
 exten => _3246,n,Hangup()
 ;Remote echo
